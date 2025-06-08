@@ -1,0 +1,24 @@
+{
+  "name": "dismoto-desafio",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run start:site\" \"npm run start:api\"",
+    "start:site": "cd site && npm start",
+    "start:api": "cmd /c mvnw spring-boot:run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenisVitor/dismoto-desafio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenisVitor/dismoto-desafio/issues"
+  },
+  "homepage": "https://github.com/DenisVitor/dismoto-desafio#readme",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

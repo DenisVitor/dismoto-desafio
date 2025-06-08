@@ -1,0 +1,12 @@
+<div
+  class="modal-backdrop"
+  (click)="onBackdropClick($event)"
+  (keydown)="onKeyDown($event)"
+  tabindex="0"
+  #modal
+>
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="close-button" (click)="onClose()">X</button>
+    <ng-content></ng-content>
+  </div>
+</div>

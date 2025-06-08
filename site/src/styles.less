@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--color-primary);
+}
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --color-primary: #1a1a1a;
+  --color-secondary: #757574;
+  --color-red-button: #fc3535;
+  --color-green-button: #7eff5e;
+}
+
+@keyframes toshow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes totheleft {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes totheright {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotatereveal {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) rotateX(0.25turn);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+}

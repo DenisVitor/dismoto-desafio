@@ -1,0 +1,43 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: toshow 0.4s ease none;
+  .modal-content {
+    background: #fff;
+    padding: 3rem;
+    border-radius: 8px;
+    position: relative;
+    animation: rotatereveal 0.5s ease none;
+    .close-button {
+      position: absolute;
+      top: 6px;
+      right: 8px;
+      font-size: 1.2rem;
+      background: transparent;
+      font-family: "Inter", sans-serif;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 1rem;
+      padding: 0.2rem 0.5rem;
+      transition: 0.1s ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 2px 4px 15px 2px darkgray;
+      }
+      &:active {
+        transform: scale(1);
+        box-shadow: inset 2px 4px 1px 2px darkgray;
+        color: gray;
+      }
+    }
+  }
+}
