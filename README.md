@@ -45,7 +45,7 @@ Após isso, se tudo foi configurado da forma correta, então estará funcionando
 
 ### 4 - Acessar o site
 Quando a aplicação estiver rodando, basta acessar esse link:
-[http://localhost:4200/index.html]
+(http://localhost:4200/index.html)[http://localhost:4200/index.html]
 
 Caso acesse direto pelo Docker Desktop, haverá um erro, direcionando direto para uma página do nginx, por isso é necessário colocar o /index.html, 
 para que o site possa reconhecer a página original da aplicação.
@@ -86,7 +86,7 @@ Então basta acessar tanto o site quanto a api rodando o comando:
 npm run start
 ```
 
-É o mesmo link para ambos os métodos: [http://localhost:4200/index.html]
+É o mesmo link para ambos os métodos: (http://localhost:4200/index.html)[http://localhost:4200/index.html]
 
 ### Considerações
 As configurações do .env são necessárias para ambos os métodos, independente de qual seja é necessário configurá-lo corretamente.
