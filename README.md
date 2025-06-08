@@ -3,10 +3,10 @@
 Este projeto é voltado para ser entregue a Dismoto Honda, a cópia desses arquivos não estão autorizados sem permissão.
 
 ### Requisitos
-Java 21 instalado em sua máquina.
-Não é necessário estar com o Docker instalado, mas se estiver irá facilitar o processo de utilização e se possuir o Docker Desktop será ainda mais fácil.
-A API está configurada para utilizar o PostgreSQL, caso queira utilizar outro banco de dados é necessário modificações.
-É necessário que o banco de dados possua senha.
+Java 21 instalado em sua máquina.  
+Não é necessário estar com o Docker instalado, mas se estiver irá facilitar o processo de utilização e se possuir o Docker Desktop será ainda mais fácil.  
+A API está configurada para utilizar o PostgreSQL, caso queira utilizar outro banco de dados é necessário modificações.  
+É necessário que o banco de dados possua senha.  
 
 ### 1 - Faça a clonagem do repositório
 Clone o repositório e sua máquina
