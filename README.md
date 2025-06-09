@@ -99,12 +99,12 @@ Se for necessário rodar apenas a API, basta colocar esse comando no terminal:
 Os endpoints são:
 
 - GET http://localhost:8080/products = Retorna a lista de todos os produtos.
-- GET http://localhost:8080/products/<number> = Retorna um produto específico.
+- GET http://localhost:8080/products/number = Retorna um produto específico.
 - POST http://localhost:8080/products = Cria um produto novo.
-- PATCH http://localhost:8080/products/<number> = Atualiza um produto existente.
-- DELETE http://localhost:8080/products/<number> = Deleta um produto existente
+- PATCH http://localhost:8080/products/number = Atualiza um produto existente.
+- DELETE http://localhost:8080/products/number = Deleta um produto existente
 
-Ter em mente que é para substituir o <number> pelo número do ID do produto.
+Ter em mente que é para substituir o number pelo número do ID do produto.
 
 
 ## Considerações finais
