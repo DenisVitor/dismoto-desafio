@@ -47,11 +47,9 @@ public class ProductService {
 
     public ProductResponseDTO createProduct(ProductRequestDTO dto) {
         ProductEntity createdProduct = mapper.map(dto, ProductEntity.class);
-        createdProduct.setName(dto.getName());
-        createdProduct.setPrice(dto.getPrice());
-        createdProduct.setDescription(dto.getDescription());
         createdProduct.setCreatedAt(LocalDate.now());
-        return mapper.map(repository.save(createdProduct), ProductResponseDTO.class);
+        ProductEntity saved = repository.save(createdProduct);
+        return mapper.map(saved, ProductResponseDTO.class);
     }
 
     public ProductResponseDTO updateProduct(Long id, ProductPatchRequest dto) {

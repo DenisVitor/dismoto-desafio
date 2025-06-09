@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-06-08T20:20:46-0300",
-    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.42.0.v20250514-1000, environment: Java 21.0.7 (Eclipse Adoptium)"
+    date = "2025-06-09T15:35:01-0300",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 22 (Oracle Corporation)"
 )
 @Component
 public class ProductMapperImpl implements ProductMapper {
@@ -20,11 +20,11 @@ public class ProductMapperImpl implements ProductMapper {
             return;
         }
 
-        if ( dto.getDescription() != null ) {
-            entity.setDescription( dto.getDescription() );
-        }
         if ( dto.getName() != null ) {
             entity.setName( dto.getName() );
+        }
+        if ( dto.getDescription() != null ) {
+            entity.setDescription( dto.getDescription() );
         }
         if ( dto.getPrice() != null ) {
             entity.setPrice( dto.getPrice() );
@@ -39,11 +39,11 @@ public class ProductMapperImpl implements ProductMapper {
 
         ProductResponseDTO productResponseDTO = new ProductResponseDTO();
 
-        productResponseDTO.setCreatedAt( entity.getCreatedAt() );
-        productResponseDTO.setDescription( entity.getDescription() );
         productResponseDTO.setId( entity.getId() );
         productResponseDTO.setName( entity.getName() );
+        productResponseDTO.setDescription( entity.getDescription() );
         productResponseDTO.setPrice( entity.getPrice() );
+        productResponseDTO.setCreatedAt( entity.getCreatedAt() );
 
         return productResponseDTO;
     }
